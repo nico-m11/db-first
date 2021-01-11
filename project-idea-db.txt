@@ -1,14 +1,27 @@
 Titolo: VEICOLI	
 
-ID => numeri INT
+ifd => numeri INT
 
-CASA COSTRUTTRICE => striga VARCHART(200) (es: Fiat)
+casa_costruttrice => striga VARCHART(200) (es: Fiat)
 
-MODELLO DEL VEICOLO => striga VARCHART(200) (es: Panda)
+modello_veicolo => striga VARCHART(200) (es: Panda)
 
-CARATTERISTICHE TECNICHE => stringa TEXT (es: cilindrata = 1.2cc, carburante = Benz/GPL,
-					anno di immatricolazione 05/05/2015, KM 100.000,
-					colore Grigio, cambio manuale ecc... fino a completare
-					l'intera descrizione del veicolo)
+carburante => striga VARCHART(50) (es: benz/gpl) (es: cilindrata = 1.2cc, 
 
-DATA DI PUBBLICAZIONE => data DATETIME (es: 11/01/2021 ore 16:00)
+cilindrata => numeri FLOAT (1, 1) (es: cilindrata = 1.2)
+
+cavalli => numeri TINYINT (es: 50)
+
+immatricolazione => data DATE (es: 05/05/2015)
+
+km => numeri FLOAT (3, 3) (es: 100.000)
+
+colore => striga VARCHART(50) (es: grigio)
+
+cambio =>  striga VARCHART(50) (es: manuale) 
+
+optional => stringa TEXT (es: tetto apribile, chiusure centralizzate...)
+
+prezzo => numeri FLOAT (4, 3) (es: 9.500€)
+
+data_pubblicazione => data DATETIME (es: 11/01/2021 ore 16:00)
