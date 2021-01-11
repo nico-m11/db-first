@@ -1,12 +1,12 @@
 Titolo: VEICOLI	
 
-ifd => numeri INT
+id => numeri INT
 
-casa_costruttrice => striga VARCHART(200) (es: Fiat)
+casa_costruttrice => striga VARCHAR(200) (es: Fiat)
 
-modello_veicolo => striga VARCHART(200) (es: Panda)
+modello_veicolo => striga VARCHAR(200) (es: Panda)
 
-carburante => striga VARCHART(50) (es: benz/gpl) (es: cilindrata = 1.2cc, 
+carburante => striga VARCHAR(50) (es: benz/gpl) 
 
 cilindrata => numeri FLOAT (1, 1) (es: cilindrata = 1.2)
 
@@ -16,9 +16,9 @@ immatricolazione => data DATE (es: 05/05/2015)
 
 km => numeri FLOAT (3, 3) (es: 100.000)
 
-colore => striga VARCHART(50) (es: grigio)
+colore => striga VARCHAR(50) (es: grigio)
 
-cambio =>  striga VARCHART(50) (es: manuale) 
+cambio =>  striga VARCHAR(50) (es: manuale) 
 
 optional => stringa TEXT (es: tetto apribile, chiusure centralizzate...)
 
